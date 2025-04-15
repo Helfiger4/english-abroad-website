@@ -6,14 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About English Abroad</title>
   <link rel="stylesheet" href="style.css" />
-  <script>
-    function toggleLanguage() {
-      const eng = document.querySelectorAll('.lang-eng');
-      const rus = document.querySelectorAll('.lang-rus');
-      eng.forEach(el => el.style.display = el.style.display === 'none' ? 'block' : 'none');
-      rus.forEach(el => el.style.display = el.style.display === 'none' ? 'block' : 'none');
-    }
-  </script>
+  <script src="script.js" defer></script>
 </head>
 <body>
   <header>
@@ -45,6 +38,16 @@
         <h2 class="lang-rus" style="display:none;">💬 Задать вопрос</h2>
       </a>
     </div>
+
+    <section id="news">
+      <h2 class="lang-eng">📰 Last News</h2>
+      <h2 class="lang-rus" style="display:none;">📰 Последние новости</h2>
+      <ul id="last-news"></ul>
+
+      <h2 class="lang-eng">📚 Archived News</h2>
+      <h2 class="lang-rus" style="display:none;">📚 Архив новостей</h2>
+      <ul id="archive-news"></ul>
+    </section>
   </main>
 </body>
 </html>

@@ -55,3 +55,10 @@ h1 {
 .card h2 {
   margin: 10px 0;
 }
+ul {
+  list-style: none;
+  padding: 0;
+}
+ul li {
+  margin: 5px 0;
+}
