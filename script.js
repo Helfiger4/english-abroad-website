@@ -1,44 +1,4 @@
 
-let currentLang = 'eng';
-
-function toggleLanguage() {
-  currentLang = currentLang === 'eng' ? 'rus' : 'eng';
-
-  const content = {
-    eng: {
-      title: "About English Abroad",
-      news: "📰 News",
-      programs: "🎓 Programs / Courses",
-      request: "📨 Send Request",
-      visas: "🛬 Visas – Tips & Guidelines",
-      chat: "💬 Ask a Question",
-      lastNews: "📰 Last News",
-      archiveNews: "📚 Archived News"
-    },
-    rus: {
-      title: "Об английском за границей",
-      news: "📰 Новости",
-      programs: "🎓 Программы / Курсы",
-      request: "📨 Подать заявку",
-      visas: "🛬 Визы – Советы и рекомендации",
-      chat: "💬 Задать вопрос",
-      lastNews: "📰 Последние новости",
-      archiveNews: "📚 Архив новостей"
-    }
-  };
-
-  const dict = content[currentLang];
-
-  document.getElementById("title-main").textContent = dict.title;
-  document.getElementById("btn-news").textContent = dict.news;
-  document.getElementById("btn-programs").textContent = dict.programs;
-  document.getElementById("btn-request").textContent = dict.request;
-  document.getElementById("btn-visas").textContent = dict.visas;
-  document.getElementById("btn-chat").textContent = dict.chat;
-  document.getElementById("label-last-news").textContent = dict.lastNews;
-  document.getElementById("label-archive-news").textContent = dict.archiveNews;
-}
-
 function showNewsSection() {
   document.getElementById('news').style.display = 'block';
 
@@ -69,6 +29,6 @@ function showNewsSection() {
       });
     })
     .catch(err => {
-      console.error("Failed to load news:", err);
+      console.error("Не удалось загрузить новости:", err);
     });
 }

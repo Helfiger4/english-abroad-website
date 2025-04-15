@@ -1,32 +1,31 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About English Abroad</title>
+  <title>Об английском за границей</title>
   <link rel="stylesheet" href="style.css" />
   <script src="script.js" defer></script>
 </head>
 <body>
   <header>
-    <img src="Picture1.png" alt="About English Abroad" class="header-image" />
-    <h1 id="title-main">About English Abroad</h1>
-    <button onclick="toggleLanguage()" class="language-button">ENG / RUS</button>
+    <img src="Picture1.png" alt="Об английском за границей" class="header-image" />
+    <h1>Об английском за границей</h1>
   </header>
   <main>
     <div class="card-container">
-      <button class="card" onclick="showNewsSection()"><h2 id="btn-news">📰 News</h2></button>
-      <a class="card" href="#programs"><h2 id="btn-programs">🎓 Programs / Courses</h2></a>
-      <a class="card" href="#grants"><h2 id="btn-request">📨 Send Request</h2></a>
-      <a class="card" href="#visas"><h2 id="btn-visas">🛬 Visas – Tips & Guidelines</h2></a>
-      <a class="card" href="https://t.me/AboutEnglishAbroad_bot" target="_blank"><h2 id="btn-chat">💬 Ask a Question</h2></a>
+      <button class="card" onclick="showNewsSection()"><h2>📰 Новости</h2></button>
+      <a class="card" href="#programs"><h2>🎓 Программы / Курсы</h2></a>
+      <a class="card" href="#grants"><h2>📨 Подать заявку</h2></a>
+      <a class="card" href="#visas"><h2>🛬 Визы – Советы и рекомендации</h2></a>
+      <a class="card" href="https://t.me/AboutEnglishAbroad_bot" target="_blank"><h2>💬 Задать вопрос</h2></a>
     </div>
 
     <section id="news" style="display: none;">
-      <h2 id="label-last-news">📰 Last News</h2>
+      <h2>📰 Последние новости</h2>
       <ul id="last-news"></ul>
-      <h2 id="label-archive-news">📚 Archived News</h2>
+      <h2>📚 Архив новостей</h2>
       <ul id="archive-news"></ul>
     </section>
   </main>
