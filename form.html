@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Подать заявку</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="form.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Подать заявку</h1>
+  </header>
+  <main>
+    <form id="application-form">
+      <label>Имя: <input type="text" name="name" required /></label><br />
+      <label>Электронная почта: <input type="email" name="email" required /></label><br />
+      <label>Телефон (WhatsApp, Telegram): <input type="text" name="phone" required /></label><br />
+      <label>Страна подачи заявки: <input type="text" name="country" required /></label><br />
+      <button type="submit">Отправить</button>
+      <p id="success-message" style="color: green; display: none;">Заявка отправлена!</p>
+    </form>
+  </main>
+</body>
+</html>
