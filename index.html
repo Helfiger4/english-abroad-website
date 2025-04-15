@@ -17,10 +17,10 @@
   </header>
   <main>
     <div class="card-container">
-      <a class="card" href="#news">
+      <button class="card" onclick="showNewsSection()">
         <h2 class="lang-eng">📰 News</h2>
         <h2 class="lang-rus" style="display:none;">📰 Новости</h2>
-      </a>
+      </button>
       <a class="card" href="#programs">
         <h2 class="lang-eng">🎓 Programs / Courses</h2>
         <h2 class="lang-rus" style="display:none;">🎓 Программы / Курсы</h2>
@@ -39,7 +39,7 @@
       </a>
     </div>
 
-    <section id="news">
+    <section id="news" style="display: none;">
       <h2 class="lang-eng">📰 Last News</h2>
       <h2 class="lang-rus" style="display:none;">📰 Последние новости</h2>
       <ul id="last-news"></ul>

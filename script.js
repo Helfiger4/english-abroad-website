@@ -6,6 +6,10 @@ function toggleLanguage() {
   rus.forEach(el => el.style.display === 'none' ? 'block' : 'none');
 }
 
+function showNewsSection() {
+  document.getElementById('news').style.display = 'block';
+}
+
 const sheetAPI = "https://script.google.com/macros/s/AKfycbzAZ-_yP8mU8mbk8vdIpDWRe-ZCIutj5_24gUTgA5W4CijDXH4pI7YgSJCfJdRsFQg/exec";
 
 fetch(sheetAPI)
