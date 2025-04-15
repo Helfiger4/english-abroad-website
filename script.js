@@ -1,40 +1,40 @@
 
-let lang = 'eng';
+let currentLang = 'eng';
 
 function toggleLanguage() {
-  lang = lang === 'eng' ? 'rus' : 'eng';
+  currentLang = currentLang === 'eng' ? 'rus' : 'eng';
 
-  const dictionary = {
+  const content = {
     eng: {
       title: "About English Abroad",
-      btnNews: "📰 News",
-      btnPrograms: "🎓 Programs / Courses",
-      btnRequest: "📨 Send Request",
-      btnVisas: "🛬 Visas – Tips & Guidelines",
-      btnChat: "💬 Ask a Question",
+      news: "📰 News",
+      programs: "🎓 Programs / Courses",
+      request: "📨 Send Request",
+      visas: "🛬 Visas – Tips & Guidelines",
+      chat: "💬 Ask a Question",
       lastNews: "📰 Last News",
       archiveNews: "📚 Archived News"
     },
     rus: {
       title: "Об английском за границей",
-      btnNews: "📰 Новости",
-      btnPrograms: "🎓 Программы / Курсы",
-      btnRequest: "📨 Подать заявку",
-      btnVisas: "🛬 Визы – Советы и рекомендации",
-      btnChat: "💬 Задать вопрос",
+      news: "📰 Новости",
+      programs: "🎓 Программы / Курсы",
+      request: "📨 Подать заявку",
+      visas: "🛬 Визы – Советы и рекомендации",
+      chat: "💬 Задать вопрос",
       lastNews: "📰 Последние новости",
       archiveNews: "📚 Архив новостей"
     }
   };
 
-  const dict = dictionary[lang];
+  const dict = content[currentLang];
 
   document.getElementById("title-main").textContent = dict.title;
-  document.getElementById("btn-news").textContent = dict.btnNews;
-  document.getElementById("btn-programs").textContent = dict.btnPrograms;
-  document.getElementById("btn-request").textContent = dict.btnRequest;
-  document.getElementById("btn-visas").textContent = dict.btnVisas;
-  document.getElementById("btn-chat").textContent = dict.btnChat;
+  document.getElementById("btn-news").textContent = dict.news;
+  document.getElementById("btn-programs").textContent = dict.programs;
+  document.getElementById("btn-request").textContent = dict.request;
+  document.getElementById("btn-visas").textContent = dict.visas;
+  document.getElementById("btn-chat").textContent = dict.chat;
   document.getElementById("label-last-news").textContent = dict.lastNews;
   document.getElementById("label-archive-news").textContent = dict.archiveNews;
 }
