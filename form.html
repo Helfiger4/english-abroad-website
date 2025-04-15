@@ -14,11 +14,19 @@
   </header>
   <main>
     <form id="application-form">
-      <label>Имя: <input type="text" name="name" required /></label><br />
-      <label>Электронная почта: <input type="email" name="email" required /></label><br />
-      <label>Телефон (WhatsApp, Telegram): <input type="text" name="phone" required /></label><br />
-      <label>Страна подачи заявки: <input type="text" name="country" required /></label><br />
-      <button type="submit">Отправить</button>
+      <label>Имя:<br />
+        <input type="text" name="name" required inputmode="latin" lang="en" />
+      </label><br />
+      <label>Электронная почта:<br />
+        <input type="email" name="email" required inputmode="latin" lang="en" />
+      </label><br />
+      <label>Телефон (WhatsApp, Telegram):<br />
+        <input type="text" name="phone" required inputmode="latin" lang="en" />
+      </label><br />
+      <label>Страна подачи заявки:<br />
+        <input type="text" name="country" required inputmode="latin" lang="en" />
+      </label><br />
+      <button type="submit" class="submit-btn">Отправить</button>
       <p id="success-message" style="color: green; display: none;">Заявка отправлена!</p>
     </form>
   </main>
