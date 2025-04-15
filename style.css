@@ -5,9 +5,11 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
+  position: relative;
 }
 header {
   padding: 20px;
+  position: relative;
 }
 .header-image {
   max-width: 100%;
@@ -17,6 +19,17 @@ header {
 h1 {
   color: #333;
   margin-top: 15px;
+}
+.language-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
 }
 .card-container {
   display: flex;

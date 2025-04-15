@@ -6,19 +6,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About English Abroad</title>
   <link rel="stylesheet" href="style.css" />
+  <script>
+    function toggleLanguage() {
+      const eng = document.querySelectorAll('.lang-eng');
+      const rus = document.querySelectorAll('.lang-rus');
+      eng.forEach(el => el.style.display = el.style.display === 'none' ? 'block' : 'none');
+      rus.forEach(el => el.style.display = el.style.display === 'none' ? 'block' : 'none');
+    }
+  </script>
 </head>
 <body>
   <header>
     <img src="Picture1.png" alt="About English Abroad" class="header-image" />
-    <h1>About English Abroad</h1>
+    <h1 class="lang-eng">About English Abroad</h1>
+    <h1 class="lang-rus" style="display:none;">Об английском за границей</h1>
+    <button onclick="toggleLanguage()" class="language-button">ENG / RUS</button>
   </header>
   <main>
     <div class="card-container">
-      <a class="card" href="#news"><h2>📰 News</h2></a>
-      <a class="card" href="#programs"><h2>🎓 Programs / Courses</h2></a>
-      <a class="card" href="#grants"><h2>💰 Grants & Scholarships</h2></a>
-      <a class="card" href="#visas"><h2>🛬 Visas – Tips & Guidelines</h2></a>
-      <a class="card" href="https://t.me/AboutEnglishAbroad" target="_blank"><h2>💬 Ask a Question</h2></a>
+      <a class="card" href="#news">
+        <h2 class="lang-eng">📰 News</h2>
+        <h2 class="lang-rus" style="display:none;">📰 Новости</h2>
+      </a>
+      <a class="card" href="#programs">
+        <h2 class="lang-eng">🎓 Programs / Courses</h2>
+        <h2 class="lang-rus" style="display:none;">🎓 Программы / Курсы</h2>
+      </a>
+      <a class="card" href="#grants">
+        <h2 class="lang-eng">📨 Send Request</h2>
+        <h2 class="lang-rus" style="display:none;">📨 Подать заявку</h2>
+      </a>
+      <a class="card" href="#visas">
+        <h2 class="lang-eng">🛬 Visas – Tips & Guidelines</h2>
+        <h2 class="lang-rus" style="display:none;">🛬 Визы – Советы и рекомендации</h2>
+      </a>
+      <a class="card" href="https://t.me/AboutEnglishAbroad_bot" target="_blank">
+        <h2 class="lang-eng">💬 Ask a Question</h2>
+        <h2 class="lang-rus" style="display:none;">💬 Задать вопрос</h2>
+      </a>
     </div>
   </main>
 </body>
