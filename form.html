@@ -1,35 +1,36 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Подать заявку</title>
+  <title data-i18n="form_title">Подать заявку</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>Подать заявку</h1>
+    <button id="lang-toggle" class="language-button">EN</button>
+    <h1 data-i18n="form_title">Подать заявку</h1>
   </header>
   <main>
     <form action="https://formsubmit.co/936028@gmail.com" method="POST">
       <input type="hidden" name="_captcha" value="false">
       <input type="hidden" name="_next" value="https://your-redirect-page.com/thankyou.html">
 
-      <label>Имя:<br />
+      <label data-i18n="name_label">Имя:<br />
         <input type="text" name="Имя" required inputmode="latin" lang="en" />
       </label><br />
-      <label>Электронная почта:<br />
+      <label data-i18n="email_label">Электронная почта:<br />
         <input type="email" name="Email" required inputmode="latin" lang="en" />
       </label><br />
-      <label>Телефон (WhatsApp, Telegram):<br />
+      <label data-i18n="phone_label">Телефон (WhatsApp, Telegram):<br />
         <input type="text" name="Телефон" required inputmode="latin" lang="en" />
       </label><br />
-      <label>Страна подачи заявки:<br />
+      <label data-i18n="country_label">Страна подачи заявки:<br />
         <input type="text" name="Страна" required inputmode="latin" lang="en" />
       </label><br />
-      <button type="submit" class="submit-btn">Отправить</button>
+      <button type="submit" class="submit-btn" data-i18n="submit_btn">Отправить</button>
     </form>
   </main>
+  <script src="lang.js"></script>
 </body>
 </html>

@@ -1,23 +1,24 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Об английском за границей</title>
+  <title data-i18n="title">Об английском за границей</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
+    <button id="lang-toggle" class="language-button">EN</button>
     <img src="Picture1.png" alt="Об английском за границей" class="header-image" />
-    <h1>Об английском за границей</h1>
+    <h1 data-i18n="header">Об английском за границей</h1>
   </header>
   <main>
     <div class="card-container">
-      <a class="card" href="#programs"><h2>🎓 Программы / Курсы</h2></a>
-      <a class="card" href="form.html"><h2>📨 Подать заявку</h2></a>
-      <a class="card" href="https://t.me/+jMZaeH-zxhkwZjgy" target="_blank"><h2>💬 Задать вопрос</h2></a>
+      <a class="card" href="#programs"><h2 data-i18n="programs">🎓 Программы / Курсы</h2></a>
+      <a class="card" href="form.html"><h2 data-i18n="apply">📨 Подать заявку</h2></a>
+      <a class="card" href="https://t.me/+jMZaeH-zxhkwZjgy" target="_blank"><h2 data-i18n="ask">💬 Задать вопрос</h2></a>
     </div>
   </main>
+  <script src="lang.js"></script>
 </body>
 </html>
