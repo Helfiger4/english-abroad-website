@@ -11,29 +11,14 @@
       font-family: Arial, sans-serif;
       background-color: #e3f2fd;
       text-align: center;
-    }
-    header {
-      padding: 20px;
-      background-color: #e3f2fd;
-    }
-    .header-image {
-  width: 70%;
-  height: auto;
-  border-radius: 12px;
-}
-  max-width: 70%;
-  height: auto;
-  border-radius: 12px;
-}
-    .page-wrapper {
       display: flex;
-      justify-content: flex-start;
     }
     .sidebar {
       width: 200px;
       background-color: #f1f1f1;
       padding: 20px;
-      min-height: 100vh;
+      height: 100vh;
+      box-sizing: border-box;
     }
     .sidebar a {
       display: block;
@@ -46,16 +31,28 @@
       border-radius: 8px;
       text-align: center;
     }
+    .main-content {
+      flex: 1;
+    }
+    header {
+      padding: 20px;
+      background-color: #e3f2fd;
+    }
+    .header-image {
+      width: 70%;
+      height: auto;
+      border-radius: 12px;
+    }
   </style>
 </head>
 <body>
-  <header>
-    <img src="Picture1.png" alt="Об английском за границей" class="header-image" />
-  </header>
-  <div class="page-wrapper">
-    <div class="sidebar">
-      <a href="malta.html">Malta</a>
-    </div>
+  <div class="sidebar">
+    <a href="malta.html">Malta</a>
+  </div>
+  <div class="main-content">
+    <header>
+      <img src="Picture1.png" alt="Об английском за границей" class="header-image" />
+    </header>
   </div>
 </body>
 </html>
