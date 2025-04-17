@@ -6,8 +6,24 @@
   <title>Программы / Курсы</title>
   <link rel="stylesheet" href="style.css" />
   <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #e3f2fd;
+      text-align: center;
+    }
+    header {
+      padding: 20px;
+      background-color: #e3f2fd;
+    }
+    .header-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+    }
     .page-wrapper {
       display: flex;
+      justify-content: flex-start;
     }
     .sidebar {
       width: 200px;
@@ -26,37 +42,16 @@
       border-radius: 8px;
       text-align: center;
     }
-    .content {
-      flex: 1;
-      padding: 20px;
-    }
-    body {
-      background-color: #e3f2fd;
-      margin: 0;
-      font-family: Arial, sans-serif;
-      text-align: center;
-    }
-    header {
-      padding: 20px;
-      background-color: #e3f2fd;
-    }
-    .header-image {
-      max-width: 100%;
-      height: auto;
-      border-radius: 12px;
-    }
   </style>
 </head>
 <body>
   <header>
     <img src="Picture1.png" alt="Об английском за границей" class="header-image" />
-    <h1>Программы / Курсы</h1>
   </header>
   <div class="page-wrapper">
     <div class="sidebar">
       <a href="malta.html">Malta</a>
     </div>
-    <div class="content"></div>
   </div>
 </body>
 </html>
